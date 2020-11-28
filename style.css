@@ -1,0 +1,226 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.header{
+    width: 90%;
+    margin: 0 auto;
+}
+.header::after{
+    content: '';
+    clear: both;
+}
+.header h1{
+    display: inline-block;
+    padding: 17px 24px;
+}
+.header h1 a {
+    color: black;
+    text-decoration: none;
+    transition: .4s;
+}
+.header h1 a:hover{
+    color: red;
+}
+.header ul{
+    float: right;
+}
+.header ul li{
+    padding: 25px;
+    display: inline-block;
+}
+
+.header ul li:hover{
+    background-color: red;
+}
+.header ul li a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.header ul li a:hover{
+    color: white;
+
+}
+.banner{
+    margin-top: 5px;
+    height: 60vh;
+    background-image: url(image/coding-language.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2{
+    z-index: 1;
+    font-size: 50px;
+    padding: 20px 25px;
+    border-style: double;
+    color: white;
+}
+.banner:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(255, 26, 26, .4);
+}
+section{
+    padding: 50px 0;
+}
+
+section h3{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    position: relative;
+
+}
+section h3::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    width: 120px;
+    height: 4px;
+    background-color: red;
+    left: 45.5%;
+}
+img{
+    border-radius: 90%;
+    margin-left: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 45%;
+
+}
+.about p{
+    text-align: justify;
+    margin: 0px 35px 0px 35px;
+    font-size: 20px;
+}
+#skills h5{
+    margin-top: 2%;
+    margin-left: 1%;
+    font-size: 30px;
+}
+#skills .bar{
+    height: 30px;
+    background-color: ivory;
+    margin: 10px 10px 20px 10px;
+}
+.bar .nilai{
+   height: 30px;
+   
+   background-color: red;
+   display: inline-block;
+}
+.html{
+    width: 80%;
+}
+.ps{
+    width: 75%;
+}
+.cd{
+    width: 80%;
+}
+.js{
+   width: 65%;
+}
+.css{
+    width: 80%;
+}
+
+.col-4 {
+    width: 25%;
+    padding: 15px;
+    margin-left: 25%;
+    font-size: 26px;
+    text-align: center;
+}
+.col-4 img{
+    width: 100%;
+    border-radius: 0%;
+}
+.tulisanPorto{
+    text-align: center;
+    font-size: 24px;
+}
+.contact{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+.contact p{
+    text-align: center;
+    font-size: 20px;
+}
+
+#medsos{
+    padding: 30px 0px;
+    background-color: #DE0000;
+}
+#medsos h4{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+#medsos ul li{
+    display: inline-block;
+    padding: 2%;
+    
+}
+#medsos ul li .fab{
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile{
+    float: right;
+    display: none;
+    padding: 20px;
+    border: solid;
+}
+.mobile:hover{
+    cursor: pointer;
+}
+#cek{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    background-color: red .9;
+}
+
+@media (max-width: 800px){
+    .mobile{
+        display: block;
+    }
+    .header ul{
+        display: none;
+    }
+}
